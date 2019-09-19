@@ -1,5 +1,20 @@
 ## The following categories related problems' solutions are in the repository
-# Graph Theory	
+
+# Advanced Search Techniques
+  - Binary Search/ Bisection
+  - Ternary Search
+  
+# Data Structures
+  - Basic Data Structures
+  - Binary Indexed Tree
+  - Binary Search Tree
+  - Hashing
+  - Orthogonal Range Search
+  - Range Minimum Query/Lowest Common Ancestor
+  - Segment Tree/Interval Tree
+  - Trie Tree
+
+# Graph Theory
   - 2-SAT
   - Articulation/Bridge/Biconnected Component
   - Bellman Ford
@@ -11,7 +26,4 @@
   - Heavy-Light Decomposition
   - Minimum Spanning Tree
   - Stable Marriage Problem
-
-# Advanced Search Techniques
-  - Binary Search/ Bisection
-  - Ternary Search
+  
