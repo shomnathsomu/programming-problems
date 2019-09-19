@@ -11,3 +11,7 @@
   - Heavy-Light Decomposition
   - Minimum Spanning Tree
   - Stable Marriage Problem
+
+# Advanced Search Techniques
+  - Binary Search/ Bisection
+  - Ternary Search
