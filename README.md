@@ -27,3 +27,7 @@
   - Minimum Spanning Tree
   - Stable Marriage Problem
   
+# Divide and conquer
+  - Dynamic Programming
+  - Discrete Logarithm
+  - Greedy
