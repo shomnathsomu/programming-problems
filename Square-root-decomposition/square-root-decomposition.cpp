@@ -1,26 +1,28 @@
 /**____________________________________________________ |
 |                                                       |
-|            email:shomnathcse22@gmail.com              |
+|            Email:shomnathcse22@gmail.com              |
 |    Codeforces == L1nK1n_ && Topcoder == L1nK1n        |
 |_____________________________________________________**/
+//#pragma warning (disable: 4786)
+//#pragma comment (linker, "/STACK:16777216")
 
 /**
 Square Root Decomposition
 **/
 
-int segment[10000];
-int input[100007], segment_size;
+#include <bits/stdc++.h>
+using namespace std;
 
-int preprocessing(int input[], int n) {
+int segment[10000];
+
+void preprocessing(int input[], int n, int segment_size) {
     int current_segment=-1;
-    segment_size=sqrt(n);
 
     for(int i=0; i<n; i++) {
         if(i%segment_size == 0) current_segment++;
         segment[current_segment] += input[i];
     }
-
-    return segment_size;
+    return;
 }
 
 int query(int input[], int segment_size, int l, int r) {
@@ -51,4 +53,35 @@ void update(int input[], int segment_size, int i, int val) {
     segment[segment_no] += val;
 
     input[i] = val;
+    return;
 }
+
+int main(int argc, const char *argv[]) {
+
+    int cs, n, input[100000];
+    scanf("%d", &cs);
+
+    for(int ii=1; ii<cs+1; ii++){
+
+        scanf("%d", &n);
+        int segment_size = sqrt(n);
+        memset(input, 0, sizeof(input));
+
+        for(int j=0; j<n; j++) scanf("%d", &input[j]);
+        preprocessing(input, n, segment_size);
+
+        cout << query(input, segment_size, 0, 9) << endl;
+        update(input, segment_size, 9, 0);
+        cout << query(input, segment_size, 0, 9) << endl;
+    }
+
+}
+
+
+/*
+
+Output:
+55
+45
+
+*/
