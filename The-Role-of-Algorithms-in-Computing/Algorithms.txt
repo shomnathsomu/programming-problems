@@ -1,9 +1,11 @@
 1.1-1 Give a real-world example that requires sorting or a real-world example that requires computing a convex hull.
 
-Solution: The contact book in our phones needs to be sorted alphabetically so that we can find person phone number easily. Some other examples are flights, movie tickets they are all sorted by time. Even our daily schedules are sorted by time.
+Solution: The contact book in our phones needs to be sorted alphabetically so that we can find person phone number easily. 
+Some other examples are flights, movie tickets they are all sorted by time. Even our daily schedules are sorted by time.
 
 Convex hull can be defined as a step of points, a line connecting the points in a convex polygonic way, so that all the points are inside it.
 In image processing application Convex hull is used.
+
 
 1.1-2 Other than speed, what other measures of efficiency might one use in a real-world setting?
 
@@ -33,7 +35,8 @@ Similar: Both are graph algorithms and find path.
 Difference: The shortest path algorithm needs 2 points, where as salesman algorithms needs a path between more points that returns to first point.
 
 
-1.1-5 Come up with a real-world problem in which only the best solution will do. Then come up with one in which a solution that is “approximately” the best is good enough.
+1.1-5 Come up with a real-world problem in which only the best solution will do. 
+Then come up with one in which a solution that is “approximately” the best is good enough.
 
 Solution:
 
