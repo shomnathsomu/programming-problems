@@ -9,7 +9,7 @@ void sieve()
     for(i = 3; i*i <= MX; i+=2){
         if(!vis[i]){
             prm[p++] = i;
-            for(j = i*i; j <= MX; j += (i<<1)) vis[j] = 1;
+            for(j = i*i; j <= MX; j += (i<<1)) vis[j] = 1; /// i<<1 equivalent to 2*i
         }
     }
     for(; i < MX; i+=2) if(!vis[i]) prm[p++] = i;
